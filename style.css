@@ -1,0 +1,131 @@
+@font-face {
+    font-family: inter;
+    src: url(fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.body-background {
+    background-color: #141414;
+}
+
+.web-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.header {
+    font-family: inter;
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding: 20px;
+    width: 90%;
+    letter-spacing: -1px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.banner {
+    margin-top: 30px;
+    margin-bottom: -20px;
+    height: 1rem;
+    color: white;
+    font-family: inter;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-right: solid 1px rgba(255,255,255,0.1);
+    border-left: solid 1px rgba(255,255,255,0.1);
+}
+
+.player-card {
+    border: 1px solid rgba(255,255,255,0.1);
+    height: 60px;
+    margin: 20px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    transition: ease-in .4s;
+}
+
+input.X, input.O {
+    background-color: #141414;
+    font-family: inter;
+    text-align: center;
+    width: 180px;
+    color: white;
+    border: none;
+    border-right: 1px solid rgba(255,255,255,0.1);
+    outline: none;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.player-score {
+    flex: 1;
+    font-family: inter;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+}
+
+.game {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin: auto;
+}
+
+.grid-unit {
+    outline: 1px solid rgba(255,255,255,0.2);
+    transition: ease-in 0.2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: inter;
+    color: rgba(255,255,255,0.1);
+    font-size: 120px;
+}
+
+.grid-unit:hover {
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.06);
+}
+
+.footer {
+    margin-top: auto;
+}
+
+.button-container {
+    display: flex;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.button {
+    width: 180px;
+    height: 50px;
+    margin: 25px;
+    border-radius: 20px;
+    border: 1px solid white;
+    background-color: transparent;
+    transition: ease-in 0.2s;
+    color: white;
+    font-family: inter;
+    font-size: 20px;
+}
+
+.button:hover {
+    scale:1.05;
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.06);
+}
